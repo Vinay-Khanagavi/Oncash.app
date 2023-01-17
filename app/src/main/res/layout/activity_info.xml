@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:visibility="visible"
+    tools:visibility="visible">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_info_detail"
+            android:layout_width="match_parent"
+            android:layout_height="343dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="#E1F3FF"
+            app:cardCornerRadius="29dp"
+            app:cardElevation="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_goneMarginTop="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/offerImage_info"
+                    android:layout_width="147dp"
+                    android:layout_height="133dp"
+                    android:layout_marginTop="56dp"
+                    android:layout_marginBottom="46dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_img"
+                    android:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+                    app:layout_constraintBottom_toTopOf="@+id/cardview_offer_detial"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/cardview_offer_detial"
+                    android:layout_width="243dp"
+                    android:layout_height="76dp"
+                    android:layout_marginBottom="32dp"
+                    app:cardBackgroundColor="#FFF5F5"
+                    app:cardCornerRadius="28dp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="parent" >
+
+
+                    <TextView
+                        android:id="@+id/offer_price"
+                        android:layout_width="27dp"
+                        android:layout_height="24dp"
+                        android:text="26"
+                        android:layout_marginStart="178dp"
+                        android:layout_marginTop="25dp"
+                        app:layout_constraintVertical_bias="0.785"
+                        tools:ignore="DuplicateIds" />
+
+                    <TextView
+                        android:id="@+id/offer_desciption"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="40dp"
+
+
+                        android:text="Install To Earn" />
+
+                    <TextView
+                        android:id="@+id/offername_info"
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingLeft="20dp"
+                        android:text="Offer name"
+                        android:textColor="#101010"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rectangle_3"
+                        android:layout_width="84dp"
+                        android:layout_height="57dp"
+                        android:background="@drawable/rectangle_5"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="10dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/backButton_Info"
+                    android:layout_width="50dp"
+                    android:layout_height="55dp"
+                    android:elevation="14dp"
+                    app:backgroundTint="#EAE9E9"
+                    app:cornerRadius="54dp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.046"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.055" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/offerLinkButton_info"
+            android:layout_width="335dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="16dp"
+            android:text="Complete Offer"
+            app:backgroundTint="#3c4952"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_info"
+            android:layout_width="380dp"
+            android:layout_height="237dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="32dp"
+            app:cardBackgroundColor="#F4F4F4"
+            app:cardCornerRadius="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/offerLinkButton_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardview_info_detail"
+            app:layout_constraintVertical_bias="0.714">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/instructionList_info"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="315dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/steps_to_ea"
+                android:textAppearance="@style/steps_to_ea" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+
+
+
+
+
+

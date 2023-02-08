@@ -25,6 +25,11 @@ class Info : AppCompatActivity() {
         binding = ActivityInfoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.backButtonInfo .setOnClickListener {
+            startActivity(Intent(this@Info,Home::class.java))
+
+        }
+
         //Getting Data from the intent form home(Activity)
         val offerId : String? = intent.getStringExtra("OfferId")
         binding.offernameInfo.text = intent.getStringExtra("OfferName")

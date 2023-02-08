@@ -1,13 +1,17 @@
 package com.example.oncash.View
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.Gravity
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.text.set
 import androidx.lifecycle.Observer
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.bumptech.glide.load.resource.bitmap.CenterInside
 import com.example.oncash.Component.withdrawalTransaction_RecylerViewAdapter
 import com.example.oncash.DataType.withdrawalTransaction
 import com.example.oncash.ViewModel.wallet_viewModel
@@ -29,11 +33,16 @@ class Wallet : AppCompatActivity() {
         binding = ActivityWalletBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.backButWallet.setOnClickListener {
+            startActivity(Intent(this@Wallet,Home::class.java))
+
+        }
+
 
         var walletBalance = intent.getStringExtra("walletBalance")?.toInt()
         val userRecordId = intent.getStringExtra("userRecordId")
         userNumber  = intent.getStringExtra("userNumber")?.toLong()!!
-        binding.walletBalanceWallet.text = walletBalance.toString()
+       binding.walletBala.text = walletBalance.toString()
         Log.i("USERR", userNumber.toString() )
         binding.withdrawalTransaction.adapter = adapter
         binding.withdrawalTransaction.layoutManager = LinearLayoutManager(this , LinearLayoutManager.VERTICAL ,false)
@@ -45,7 +54,6 @@ class Wallet : AppCompatActivity() {
             if (requestAmount.isNotEmpty()) {
                 if (walletBalance!!.toInt() >= requestAmount.toInt()) {
                     if (requestAmount.toInt() > 20) {
-
                             viewModel.withdrawRequest(
                                 userNumber,
                                 requestAmount.toInt(),
@@ -60,7 +68,7 @@ class Wallet : AppCompatActivity() {
                                     //   walletBalance = wallet
                                     walletBalance =
                                         walletBalance!! - status.withdrawalTransaction.WithdrawalAmount.toInt()
-                                    binding.walletBalanceWallet.text = walletBalance.toString()
+                                    binding.walletBala.text = walletBalance.toString()
                                     binding.withdrawRequestedAmount.editableText.clear()
 
                                     withdrawalList.add(status.withdrawalTransaction)
@@ -97,6 +105,7 @@ class Wallet : AppCompatActivity() {
     }
 
 
+
  private suspend fun getTransaction(){
      viewModel.withdrawalTransaction(userNumber)
      viewModel.getWithdrawalTransaction().observe(this , Observer { withdrawalTransaction ->
@@ -104,5 +113,6 @@ class Wallet : AppCompatActivity() {
          adapter.updateList(withdrawalTransaction)
      })
  }
+
 
 }

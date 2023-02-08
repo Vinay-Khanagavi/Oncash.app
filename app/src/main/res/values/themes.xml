@@ -148,7 +148,7 @@
         </item>
 
         <item name="android:textColor">
-            #FFFFFF
+            #000000
         </item>
 
         <item name="android:shadowColor">

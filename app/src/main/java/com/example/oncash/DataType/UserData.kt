@@ -1,4 +1,4 @@
 package com.example.oncash.DataType
 
-data class UserData(var userRecordId: Boolean, var userNumber: String) {
+data class UserData(val isUserRegistered : Boolean , val userRecordId :String) {
 }

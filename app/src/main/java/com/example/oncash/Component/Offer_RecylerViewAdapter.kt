@@ -18,16 +18,16 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.oncash.DataType.Offer
 import com.example.oncash.DataType.UserData
+import com.example.oncash.DataType.userDataa
 import com.example.oncash.View.Info
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.net.URL
-import kotlin.properties.Delegates
 
 
-class Offer_RecylerViewAdapter(val userData :UserData) : RecyclerView.Adapter<Offer_RecylerViewAdapter.viewholder>() {
+class Offer_RecylerViewAdapter(private val userData :userDataa) : RecyclerView.Adapter<Offer_RecylerViewAdapter.viewholder>() {
     var offerList : ArrayList<Offer> = ArrayList<Offer>()
 
     var context : Context?=null

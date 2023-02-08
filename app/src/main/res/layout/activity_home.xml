@@ -56,7 +56,6 @@
             android:layout_height="72dp"
             android:clickable="true"
             app:cardCornerRadius="70dp"
-
             app:cardElevation="14dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/walletTextView"

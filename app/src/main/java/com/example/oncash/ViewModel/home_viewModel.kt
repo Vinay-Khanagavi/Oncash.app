@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.oncash.Component.UserDataStoreUseCase
 import com.example.oncash.DataType.Offer
-import com.example.oncash.DataType.userData
+import com.example.oncash.DataType.userDataa
 import com.example.oncash.Repository.Offer_FIrebase
 import com.example.oncash.Repository.UserInfo_Airtable_Repo
 import com.example.oncash.Repository.offer_AirtableDatabase
@@ -19,7 +19,7 @@ public class home_viewModel() : ViewModel() {
 
     private val offerList : MutableLiveData<ArrayList<Offer>> = MutableLiveData()
     private val wallet : MutableLiveData<Int> = MutableLiveData(0)
-    private val userData : MutableLiveData<userData> = MutableLiveData()
+    private val userData : MutableLiveData<userDataa> = MutableLiveData()
 
 
     fun getOfferList() : MutableLiveData<ArrayList<Offer>>{
@@ -42,11 +42,11 @@ public class home_viewModel() : ViewModel() {
 
     fun getUserData(context:Context) {
         viewModelScope.launch {
-          userData.postValue( userData(UserDataStoreUseCase().retrieveUserRecordId(context) ,  UserDataStoreUseCase().retrieveUserNumber(context)) )
+          userData.postValue( userDataa(UserDataStoreUseCase().retrieveUserRecordId(context) ,  UserDataStoreUseCase().retrieveUserNumber(context)) )
         }
     }
 
-    fun getuserData():MutableLiveData<userData>{
+    fun getuserData():MutableLiveData<userDataa>{
         return userData
     }
 

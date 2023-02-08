@@ -38,8 +38,6 @@
                     android:layout_marginTop="56dp"
                     android:layout_marginBottom="46dp"
                     android:layout_weight="1"
-                    android:background="@drawable/circle_img"
-                    android:shapeAppearanceOverlay="@style/roundedImageViewRounded"
                     app:layout_constraintBottom_toTopOf="@+id/cardview_offer_detial"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.502"
@@ -55,7 +53,6 @@
                     android:layout_marginBottom="32dp"
                     app:cardBackgroundColor="#FFF5F5"
                     app:cardCornerRadius="28dp"
-
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.503"
@@ -63,23 +60,11 @@
 
 
                     <TextView
-                        android:id="@+id/offer_price"
-                        android:layout_width="27dp"
-                        android:layout_height="24dp"
-                        android:text="26"
-                        android:layout_marginStart="178dp"
-                        android:layout_marginTop="25dp"
-                        app:layout_constraintVertical_bias="0.785"
-                        tools:ignore="DuplicateIds" />
-
-                    <TextView
                         android:id="@+id/offer_desciption"
-                        android:layout_width="130dp"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="25dp"
                         android:layout_marginTop="40dp"
-
-
                         android:text="Install To Earn" />
 
                     <TextView
@@ -95,31 +80,54 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/rectangle_3"
-                        android:layout_width="84dp"
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView"
+                        android:layout_width="72dp"
                         android:layout_height="57dp"
-                        android:background="@drawable/rectangle_5"
                         android:layout_marginStart="150dp"
-                        android:layout_marginTop="10dp"/>
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="6dp"
+                        app:cardBackgroundColor="#0C0C0C"
+                        app:cardCornerRadius="37dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" >
+
+
+                        <TextView
+                            android:id="@+id/offer_price"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:textColor="#E1DDDD"
+                            android:textSize="16sp"
+
+                            app:layout_constraintVertical_bias="0"
+                            tools:text="Rs 12" />
+
+                    </androidx.cardview.widget.CardView>
 
 
                 </androidx.cardview.widget.CardView>
 
-                <Button
+                <ImageView
                     android:id="@+id/backButton_Info"
-                    android:layout_width="50dp"
-                    android:layout_height="55dp"
+                    android:layout_width="33dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="10dp"
                     android:elevation="14dp"
-                    app:backgroundTint="#EAE9E9"
-                    app:cornerRadius="54dp"
-
+                    android:src="@drawable/backbut"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.046"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.055" />
+                    app:layout_constraintVertical_bias="0.06" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -143,11 +151,11 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardview_info"
-            android:layout_width="380dp"
-            android:layout_height="237dp"
-            android:layout_marginStart="10dp"
+            android:layout_width="329dp"
+            android:layout_height="239dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="20dp"
             android:layout_marginBottom="32dp"
             app:cardBackgroundColor="#F4F4F4"
             app:cardCornerRadius="18dp"
@@ -163,10 +171,9 @@
                 android:id="@+id/instructionList_info"
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                />
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="10dp" />
 
             <TextView
                 android:id="@+id/textView5"

@@ -11,7 +11,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.oncash.Component.Offer_RecylerViewAdapter
-import com.example.oncash.DataType.userData
+import com.example.oncash.DataType.userDataa
 import com.example.oncash.R
 import com.example.oncash.ViewModel.home_viewModel
 import com.example.oncash.databinding.ActivityHomeBinding
@@ -21,7 +21,7 @@ import kotlinx.coroutines.launch
 class Home : AppCompatActivity() {
     lateinit var binding: ActivityHomeBinding
     val homeViewmodel: home_viewModel by viewModels()
-    private  var userData: userData = userData("",0)
+    private  var userData: userDataa = userDataa("",0)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -89,7 +89,7 @@ class Home : AppCompatActivity() {
             binding.walletTextView.text = wallet.toString()
         })
     }
-    @Deprecated("Deprecated in Java")
+    @Deprecated("Deprecated in Java", ReplaceWith("this.finish()"))
     override fun onBackPressed() {
         this.finish()
     }

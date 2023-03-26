@@ -91,7 +91,7 @@
                         android:textColor="#131313"
                         android:textSize="16sp"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/cardView"
+                        app:layout_constraintEnd_toStartOf="@+id/Home_weekly_Button"
                         app:layout_constraintHorizontal_bias="0.475"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -99,7 +99,7 @@
                         tools:text="Install and Earn" />
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardView"
+                        android:id="@+id/Home_weekly_Button"
                         android:layout_width="72dp"
                         android:layout_height="57dp"
                         android:layout_alignParentStart="true"

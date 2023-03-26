@@ -18,4 +18,5 @@
     <string name="login">Login</string>
     <string name="please_logi">Please login to continue</string>
     <string name="get_started">Get Started</string>
+    <string name="weekly">WEEKLY</string>
 </resources>

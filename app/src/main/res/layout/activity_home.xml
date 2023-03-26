@@ -13,10 +13,8 @@
         android:layout_marginStart="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.89"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
@@ -33,8 +31,7 @@
             android:id="@+id/oncash"
             android:layout_width="205dp"
             android:layout_height="41dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
+
             android:layout_marginStart="11dp"
             android:layout_marginBottom="10dp"
             android:alpha="0.9"
@@ -90,6 +87,74 @@
             app:layout_constraintStart_toEndOf="@+id/walletcardview"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.269" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Home_weekly_Button"
+        android:layout_width="136dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        app:cardBackgroundColor="#0C0C0C"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.161">
+
+
+        <TextView
+            android:id="@+id/weekly"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#E1DDDD"
+
+            android:textSize="16sp"
+            app:layout_constraintVertical_bias="0"
+            tools:text="WEEKLY" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Home_monthly_Button"
+        android:layout_width="136dp"
+        android:layout_height="44dp"
+        app:cardBackgroundColor="#0C0C0C"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toEndOf="@+id/Home_weekly_Button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16">
+
+
+        <TextView
+            android:id="@+id/monthly"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#E1DDDD"
+            android:textSize="16sp"
+            tools:text="MONTLY" />
+
+    </androidx.cardview.widget.CardView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+

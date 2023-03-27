@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "918709599716",
+    "firebase_url": "https://oncash-app-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "oncash-app",
+    "storage_bucket": "oncash-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918709599716:android:255baeb2280b8914e6dbf1",
+        "android_client_info": {
+          "package_name": "com.example.oncash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918709599716-q447sjl91u1ljqldr9omdj080jha8aqm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4oIjPeHsbggrTnU16pjoM_owOBozuW7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918709599716-q447sjl91u1ljqldr9omdj080jha8aqm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

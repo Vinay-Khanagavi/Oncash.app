@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">oncash</string>
+    <string name="information">Information</string>
+    <string name="tata_neu">Tata Neu</string>
+    <string name="steps_to_ea">Steps To Earn Reward</string>
+    <string name="wallet_bala">Wallet Balance</string>
+    <string name="balance">Balance</string>
+    <string name="withdrawal_">Withdrawal Limit ₹10</string>
+    <string name="transaction">Transaction history</string>
+    <string name="rectangle_withdraw_TextView">Withdraw</string>
+    <string name="withdrawal_limit">Withdrawal Limit ₹10</string>
+    <string name="number_text">Number</string>
+    <string name="amount_text">Amount</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="enter_mobil">Enter Mobile Number</string>
+    <string name="some_id">+91</string>
+    <string name="continue_">Continue</string>
+    <string name="login">Login</string>
+    <string name="please_logi">Please login to continue</string>
+    <string name="get_started">Get Started</string>
+    <string name="weekly">WEEKLY</string>
+</resources>
